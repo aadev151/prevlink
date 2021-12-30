@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-prefers-dark">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-prefers-dark">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script> 
+    <title>prevlink.js Docs</title>
+    <style>
+        a:link, a:visited {
+            color: darkorange;
+        }
+        a:hover {
+            color: white;
+        }
+        p {
+            font-size: 20px;
+        }
+        code {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top">
+        <div class="navbar-brand">
+            <div class="navbar-item non-hoverable" style="padding: 2em;">
+                <a href="https://aadev151.github.io/prevlink">
+                    <strong>prevlink.js</strong>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <span class="material-icons" style="font-size: 125px; color: darkorange;">link</span>
+                <h1 style="font-size: 50px; font-weight: 800;">prevlink.js</h1>
+                <h2 style="font-size: 30px;">Just let your users preview any link on your webpage</h2>
+                <br>
+                <br>
+                <div style="text-align: left">
+                    <h1 class="title">Quick start</h1>
+                    <p>First of all, add these three lines to the end of your body. This is <code>prevlink.js</code> and its dependencies.</p>
+                    <div style="width: 540px;"><pre style="width: 100%; text-align: left"><button onclick='this.innerHTML = `Copied!`; navigator.clipboard.writeText(`<script src="https://unpkg.com/@popperjs/core@2"></script>\n<script src="https://unpkg.com/tippy.js@6"></script>\n<script src="https://unpkg.com/prevlink"></script>`)'>Copy</button><br><code class="language-html">&lt;script src=&quot;https://unpkg.com/@popperjs/core@2&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;https://unpkg.com/tippy.js@6&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;https://unpkg.com/prevlink&quot;&gt;&lt;/script&gt;</code></pre></div>
+                    <p><strong>Attention! The order matters!</strong></p>
+                    <br>
+                    <p>Then, you need to setup the links you want your users to preview. To do this, just add three attributes to <code>a</code> tag. <code>pltitle</code> sets the title of a link, <code>pldesc</code> sets the description, and <code>plimg</code> the image for the link.</p>
+                    <br>
+                    <h1 class="title">Demo</h1>
+                    <p>You can visit the <a href="https://aadev151.github.io/prevlink/demo" pltitle="prevlink.js Demo" pldesc="Demo of prevlink.js library" plimg="demo.png">demo page</a> of the project or see an example below.</p>
+                    <div style="width: 1040px; max-width: 90%;"><pre style="width: 100%; text-align: left"><button onclick='this.innerHTML = `Copied!`; navigator.clipboard.writeText(`<a href="https://aadev151.github.io/prevlink" pltitle="prevlink.js" pldesc="A wonderful JavaScript library to create previews for links on your webpage" plimg="https://aadev151.github.io/prevlink.png">prevlink.js</a>`)'>Copy</button><br><code class="language-html">&lt;a href=&quot;https://aadev151.github.io/prevlink&quot; pltitle=&quot;prevlink.js&quot; pldesc=&quot;A wonderful JavaScript library to create previews for links on your webpage&quot; plimg=&quot;https://aadev151.github.io/prevlink.png&quot;&gt;prevlink.js&lt;/a&gt;</code></pre></div>
+                    <br>
+                    <h2 class="subtitle" style="font-size: 24px; font-weight: 500;;">Output: <a href="https://aadev151.github.io/prevlink" pltitle="prevlink.js" pldesc="A wonderful JavaScript library to create previews for links on your webpage" plimg="https://aadev151.github.io/prevlink.png">prevlink.js</a></h2>               
+                    <br>
+                    <h1 class="title">Done!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://unpkg.com/prevlink"></script>
+</body>
+</html>
